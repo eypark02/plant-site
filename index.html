@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>작은 초록 — 식물 처음이세요?</title>
+  <meta name="description" content="식물을 처음 키우는 분께, 방에 드는 햇빛에 맞는 키우기 쉬운 실내식물을 골라 보내 드려요.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="logo" href="#">작은 초록</a>
+    <a class="top-link" href="#ask">추천받기</a>
+  </header>
+
+  <main>
+    <!-- 1. 첫 화면 -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">식물 처음 키우는 분을 위한 실내식물</p>
+        <h1>식물 처음이세요?<br>안 죽는 식물부터<br>골라 드릴게요.</h1>
+        <p class="lead">방에 햇빛이 얼마나 드는지만 알려 주세요. 그 방에서 키우기 쉬운 식물을 골라 연락드릴게요.</p>
+        <a class="btn" href="#ask">내 방에 맞는 식물 추천받기</a>
+        <ul class="facts">
+          <li><b>1만원</b><span>가격</span></li>
+          <li><b>4,000원</b><span>배송비</span></li>
+          <li><b>당일 사진</b><span>상하면 교환</span></li>
+        </ul>
+      </div>
+      <svg class="hero-art" viewBox="0 0 240 260" aria-hidden="true">
+        <circle cx="150" cy="80" r="62" fill="var(--sun)"/>
+        <path d="M120 170 C118 120 100 92 62 78 C70 118 88 150 120 170Z" fill="var(--leaf)"/>
+        <path d="M120 170 C124 116 146 82 190 70 C180 116 156 150 120 170Z" fill="var(--leaf-2)"/>
+        <path d="M120 172 C116 136 120 108 132 88" stroke="var(--stem)" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M120 170 C110 140 96 128 78 124" stroke="var(--stem)" stroke-width="3" fill="none" stroke-linecap="round" opacity=".6"/>
+        <path d="M74 168 H166 L156 240 Q155 248 147 248 H93 Q85 248 84 240 Z" fill="var(--pot)"/>
+        <rect x="68" y="160" width="104" height="18" rx="6" fill="var(--pot-rim)"/>
+      </svg>
+    </section>
+
+    <!-- 2. 초보도 안 죽게 -->
+    <section class="section" id="how">
+      <h2>이렇게 골라 드려요</h2>
+      <ol class="steps">
+        <li><span class="num">1</span><div><b>방 햇빛을 알려 주세요</b><p>잘 드는지, 조금 드는지, 거의 안 드는지만요.</p></div></li>
+        <li><span class="num">2</span><div><b>맞는 식물을 골라 연락드려요</b><p>그 방에서 덜 까다로운 식물로 추천해 드려요.</p></div></li>
+        <li><span class="num">3</span><div><b>집으로 보내 드려요</b><p>받은 날 상태가 안 좋으면 사진만 보내 주세요.</p></div></li>
+      </ol>
+
+      <div class="care">
+        <h3>처음 키울 때 이것만 기억하세요</h3>
+        <ul>
+          <li><span>💧</span>물은 겉흙이 말랐을 때 주세요. 너무 자주 주는 게 더 위험해요.</li>
+          <li><span>☀️</span>뜨거운 직사광선보다 밝은 창가가 좋아요.</li>
+          <li><span>🌬️</span>가끔 창문을 열어 바람을 통하게 해 주세요.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. 가격·배송·교환 -->
+    <section class="section soft" id="price">
+      <h2>가격·배송·교환</h2>
+      <dl class="info">
+        <div><dt>가격</dt><dd>1만원</dd></div>
+        <div><dt>배송비</dt><dd>4,000원</dd></div>
+        <div><dt>배송 중 상했을 때</dt><dd>도착 후 당일 사진 보내주시면 교환해 드려요.</dd></div>
+        <div><dt>연락</dt><dd><a href="tel:01000000000">010-0000-0000</a></dd></div>
+      </dl>
+    </section>
+
+    <!-- 4. 사진·후기 자리 (실제 사진·후기가 생기면 채운다) -->
+    <section class="section" id="reviews">
+      <h2>식물 사진과 후기</h2>
+      <div class="placeholder">
+        <p>실제 식물 사진은 지금 찍고 있어요.</p>
+        <p>손님 후기가 생기면 이곳에 그대로 올릴게요.</p>
+      </div>
+    </section>
+
+    <!-- 5. 문의 폼 -->
+    <section class="section ask" id="ask">
+      <h2>내 방에 맞는 식물 추천받기</h2>
+      <p class="sub">세 가지만 적어 주시면 확인 후 연락드릴게요.</p>
+      <form id="form" novalidate>
+        <label>이름
+          <input name="name" autocomplete="name" maxlength="50" required>
+        </label>
+        <label>연락처 <small>(전화번호 또는 인스타 아이디)</small>
+          <input name="contact" autocomplete="tel" maxlength="100" required>
+        </label>
+        <fieldset>
+          <legend>방에 햇빛이 얼마나 드나요?</legend>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="sun" value="잘 들어요" required><span>☀️ 잘 들어요</span></label>
+            <label class="choice"><input type="radio" name="sun" value="조금 들어요"><span>⛅ 조금 들어요</span></label>
+            <label class="choice"><input type="radio" name="sun" value="거의 안 들어요"><span>☁️ 거의 안 들어요</span></label>
+          </div>
+        </fieldset>
+        <input class="trap" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="agree">
+          <input type="checkbox" name="consent" required>
+          <span>(필수) 식물 추천 연락을 위해 이름·연락처를 받고, 연락이 끝난 뒤 1년 안에 지워요. 이에 동의해요.</span>
+        </label>
+        <button class="btn wide" type="submit">추천 요청 보내기</button>
+        <p class="msg" id="msg" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p class="logo">작은 초록</p>
+    <p>연락 <a href="tel:01000000000">010-0000-0000</a></p>
+  </footer>
+
+  <a class="sticky hide" id="sticky" href="#ask">내 방에 맞는 식물 추천받기</a>
+
+  <script>
+    const form = document.getElementById('form');
+    const msg = document.getElementById('msg');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const f = form.elements;
+      const sun = form.querySelector('input[name="sun"]:checked');
+      msg.className = 'msg';
+      if (!f.name.value.trim() || !f.contact.value.trim()) { msg.textContent = '이름과 연락처를 적어 주세요'; msg.classList.add('err'); return; }
+      if (!sun) { msg.textContent = '방에 드는 햇빛을 골라 주세요'; msg.classList.add('err'); return; }
+      if (!f.consent.checked) { msg.textContent = '개인정보 수집·이용에 동의해 주세요'; msg.classList.add('err'); return; }
+      const btn = form.querySelector('button');
+      btn.disabled = true; btn.textContent = '보내는 중…';
+      try {
+        const r = await fetch('/api/inquiry', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: f.name.value, contact: f.contact.value,
+            message: '방 햇빛: ' + sun.value,
+            consent: f.consent.checked, website: f.website.value,
+          }),
+        });
+        const d = await r.json().catch(() => ({}));
+        if (!r.ok) throw new Error(d.error || '보내지 못했어요. 잠시 뒤 다시 시도해 주세요.');
+        form.reset();
+        msg.textContent = '문의가 접수됐어요. 확인 후 연락드릴게요.';
+        msg.classList.add('ok');
+      } catch (err) {
+        msg.textContent = err.message.includes('fetch') ? '보내지 못했어요. 잠시 뒤 다시 시도해 주세요.' : err.message;
+        msg.classList.add('err');
+      } finally {
+        btn.disabled = false; btn.textContent = '추천 요청 보내기';
+      }
+    });
+
+    // 첫 화면 버튼이나 폼이 보일 때는 아래 고정 버튼을 숨긴다
+    const sticky = document.getElementById('sticky');
+    const seen = new Map();
+    const io = new IntersectionObserver((entries) => {
+      for (const en of entries) seen.set(en.target, en.isIntersecting);
+      sticky.classList.toggle('hide', [...seen.values()].some(Boolean));
+    }, { threshold: 0.1 });
+    io.observe(document.querySelector('.hero .btn'));
+    io.observe(document.getElementById('ask'));
+  </script>
+</body>
+</html>
